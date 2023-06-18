@@ -23,13 +23,13 @@ def get_note_book():
 def add_note(note):
     note_book.insert(0,note)
 
+
 def change_note(note_change: dict, id_note: str):
     for note in note_book:
         if note.get('id') == id_note:
 
             note_book.remove(note)
             note_book.insert(0,note_change)
-
 
 
 def save_file():
